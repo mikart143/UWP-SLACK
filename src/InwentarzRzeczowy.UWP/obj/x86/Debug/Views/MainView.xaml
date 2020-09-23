@@ -1,0 +1,32 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="InwentarzRzeczowy.UWP.Views.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InwentarzRzeczowy.UWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:appmodel="using:Windows.ApplicationModel"
+    xmlns:reactiveUi="using:ReactiveUI"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <NavigationView x:ConnectionId='2' x:Name="NavView"                                                                                           >
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Tag="Home" Content="Home" />
+                <NavigationViewItem Icon="Message" Tag="Add" Content="Add" />
+            </NavigationView.MenuItems>
+            <reactiveUi:RoutedViewHost x:ConnectionId='4' 
+                Grid.Row="0" 
+                x:Name="RoutedViewHost"
+                HorizontalContentAlignment="Stretch"
+                VerticalContentAlignment="Stretch" />
+        </NavigationView>
+
+        <Grid Background="Transparent" VerticalAlignment="Top" >
+
+            <TextBlock x:ConnectionId='3'                                                      Grid.Column="1" Style="{StaticResource CaptionTextBlockStyle}" Margin="8,8,0,0"/>
+        </Grid>
+
+    </Grid>
+</Page>
+
