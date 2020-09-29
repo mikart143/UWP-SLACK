@@ -5,16 +5,43 @@
     xmlns:local="using:InwentarzRzeczowy.UWP.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Transitions>
+        <TransitionCollection>
+            <AddDeleteThemeTransition />
+        </TransitionCollection>
+    </Page.Transitions>
+    <Grid ColumnSpacing="4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="422,481,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="189,165,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="393,741,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="903,682,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,667,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1045,225,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <StackPanel >
+            <TextBox Header="Nazwa urządzenia" Margin="5"/>
+            <TextBox Header="Opis przedmiotu" Margin="5" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     ScrollViewer.VerticalScrollBarVisibility="Auto" Height="110"/>
+            <Grid Margin="5" ColumnSpacing="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Dodaj zdjęcie" HorizontalAlignment="Stretch"/>
+                <Button Grid.Column="1" Content="Usuń zdjęcie"  HorizontalAlignment="Stretch"/>
+            </Grid>
+            <ComboBox Header="Wybór kategorii" HorizontalAlignment="Stretch" Margin="5"/>
+            <ListView VerticalAlignment="Stretch"/>
+        </StackPanel>
+        <Grid Grid.Column="1">
+            <controls:ImageCropper x:Name="ImageCropper" CropShape="Rectangular" ThumbPlacement="All"/>
+        </Grid>
+
+
 
     </Grid>
 </Page>

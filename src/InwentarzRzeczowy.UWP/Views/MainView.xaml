@@ -9,17 +9,23 @@
     xmlns:reactiveUi="using:ReactiveUI"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Transitions>
+        <TransitionCollection>
+            <AddDeleteThemeTransition />
+        </TransitionCollection>
+    </Page.Transitions>
     <Grid>
-        <NavigationView x:Name="NavView" Header="{x:Bind appmodel:Package.Current.DisplayName}" ItemInvoked="NavView_OnItemInvoked">
+        <NavigationView x:Name="NavView" Header="{x:Bind appmodel:Package.Current.DisplayName}" ItemInvoked="NavView_OnItemInvoked" SelectedItem="NavView.Home">
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Home" Tag="Home" Content="Home" />
-                <NavigationViewItem Icon="Message" Tag="Add" Content="Add" />
+                <NavigationViewItem IsSelected="True" Icon="Home" Tag="Home" Content="Home" />
+                <NavigationViewItem Icon="OpenFile" Tag="NewEntry" Content="Dodaj urządzenie" />
+                <NavigationViewItem Icon="Preview" Tag="NewCategory" Content="Dodaj kategorie" />
             </NavigationView.MenuItems>
             <reactiveUi:RoutedViewHost 
-                Grid.Row="0" 
                 x:Name="RoutedViewHost"
                 HorizontalContentAlignment="Stretch"
-                VerticalContentAlignment="Stretch" />
+                VerticalContentAlignment="Stretch" 
+                Margin="12"/>
         </NavigationView>
 
         <Grid Background="Transparent" VerticalAlignment="Top" >

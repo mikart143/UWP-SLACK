@@ -5,7 +5,7 @@ using Splat;
 
 namespace InwentarzRzeczowy.ViewModels
 {
-    public class NewEntryViewModel:ReactiveObject, INewEntryViewModel, IRoutableViewModel
+    public class NewEntryViewModel:ReactiveObject, INewEntryViewModel
     {
         public string UrlPathSegment { get; } = Guid.NewGuid().ToString().Substring(0, 5);
         public IScreen HostScreen { get; }

@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[6.2.10, )"
             },
+            "Microsoft.Toolkit.Uwp.UI.Controls": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
             "ReactiveUI": {
               "target": "Package",
               "version": "[11.5.35, )"
@@ -73,15 +77,15 @@
             },
             "Splat": {
               "target": "Package",
-              "version": "[9.5.37, )"
+              "version": "[9.5.49, )"
             },
             "Splat.Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[9.5.37, )"
+              "version": "[9.5.49, )"
             },
             "Splat.Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[9.5.37, )"
+              "version": "[9.5.49, )"
             }
           },
           "imports": [

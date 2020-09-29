@@ -4,20 +4,50 @@
     <RootType FullName="Windows.UI.Xaml.Application" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
+      <RootProperty Name="Transitions" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.AddDeleteThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="RowSpacing" />
+      <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Background" />
       <RootProperty Name="VerticalAlignment" />
-      <RootMethod Name="GetColumn" />
-      <RootMethod Name="SetColumn" />
+      <RootProperty Name="ColumnSpacing" />
+      <RootProperty Name="Margin" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="QueryIcon" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="InwentarzRzeczowy.UWP.Views.HomeView" />
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
       <RootProperty Name="Header" />
+      <RootProperty Name="SelectedItem" />
       <RootProperty Name="MenuItems" />
       <RootProperty Name="Content" />
       <RootEvent Name="ItemInvoked" />
@@ -26,13 +56,11 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Style" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItem">
+      <RootProperty Name="IsSelected" />
       <RootProperty Name="Icon" />
       <RootProperty Name="Tag" />
       <RootProperty Name="Content" />
@@ -40,8 +68,48 @@
     <RootType FullName="ReactiveUI.RoutedViewHost">
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="InwentarzRzeczowy.UWP.Views.MainView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox">
+      <RootProperty Name="QueryIcon" />
+      <RootProperty Name="TokenDelimiter" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
+      <RootProperty Name="IsActive" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Extensions.SymbolIconSourceExtension">
+      <RootProperty Name="Symbol" />
+    </RootType>
+    <RootType FullName="InwentarzRzeczowy.UWP.Views.NewCategoryView" />
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper">
+      <RootProperty Name="CropShape" />
+      <RootProperty Name="ThumbPlacement" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Header" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
     <RootType FullName="InwentarzRzeczowy.UWP.Views.NewEntryView" />
   </Roots.RootTypes>
 </Roots>

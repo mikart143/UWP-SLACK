@@ -6,6 +6,8 @@ namespace InwentarzRzeczowy.Interfaces
 {
     public interface IMainViewModel:INotifyPropertyChanged, IScreen
     {
-        ReactiveCommand<Unit, IRoutableViewModel> AddPage { get; }
+        public ReactiveCommand<Unit, IRoutableViewModel> OpenNewEntryPage { get; }
+        public ReactiveCommand<Unit, IRoutableViewModel> OpenNewCategoryPage { get; }
+        public ReactiveCommand<Unit, IRoutableViewModel> OpenHomePage { get; }
     }
 }

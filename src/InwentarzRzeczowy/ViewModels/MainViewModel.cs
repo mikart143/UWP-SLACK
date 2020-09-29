@@ -8,11 +8,16 @@ namespace InwentarzRzeczowy.ViewModels
     {
         public RoutingState Router { get; } = new RoutingState();
 
-        public ReactiveCommand<Unit, IRoutableViewModel> AddPage { get; }
+        public ReactiveCommand<Unit, IRoutableViewModel> OpenNewEntryPage { get; }
+        public ReactiveCommand<Unit, IRoutableViewModel> OpenNewCategoryPage { get; }
+        public ReactiveCommand<Unit, IRoutableViewModel> OpenHomePage { get; }
 
         public MainViewModel()
         {
-            AddPage = ReactiveCommand.CreateFromObservable(() => Router.Navigate.Execute(new NewEntryViewModel(this)));
+            OpenNewEntryPage = ReactiveCommand.CreateFromObservable(() => Router.Navigate.Execute(new NewEntryViewModel(this)));
+            OpenNewCategoryPage =
+                ReactiveCommand.CreateFromObservable(() => Router.Navigate.Execute(new NewCategoryViewModel(this)));
+            OpenHomePage = ReactiveCommand.CreateFromObservable(() => Router.Navigate.Execute(new HomeViewModel(this)));
         }
 
     }

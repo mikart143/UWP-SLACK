@@ -1,47 +1,58 @@
+﻿using System;
+using System.Linq;
 using System.Reactive;
 using System.Reactive.Disposables;
+using Windows.ApplicationModel.Core;
+using Windows.Foundation.Metadata;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 using InwentarzRzeczowy.Interfaces;
+using InwentarzRzeczowy.ViewModels;
 using ReactiveUI;
 using InwentarzRzeczowy.ViewModels;
 
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
+
 namespace InwentarzRzeczowy.UWP.Views
 {
-    // Here we create a locator responsible for view resolution.
+
     public class RoutedLocator : IViewLocator
     {
         public IViewFor ResolveView<T>(T viewModel, string contract = null) => viewModel switch
         {
-            NewEntryViewModel entry => new NewEntryView { ViewModel = entry },
+            INewEntryViewModel entry => new NewEntryView { ViewModel = entry },
+            INewCategoryViewModel entry => new NewCategoryView() {ViewModel = entry},
+            IHomeViewModel entry => new HomeView(){ViewModel = entry},
             _ => throw new System.NotImplementedException()
         };
     }
-
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
     public sealed partial class MainView : Page, IViewFor<IMainViewModel>
     {
         public static readonly DependencyProperty ViewModelProperty = DependencyProperty
-               .Register(nameof(ViewModel), typeof(MainView), typeof(IMainViewModel), null);
-
+            .Register(nameof(ViewModel), typeof(MainView), typeof(IMainViewModel), null);
         public MainView()
         {
             this.InitializeComponent();
-            
-            // Here we initialize the view model. You could initialize the view model elsewhere as 
-            // well I suppose, e.g. via the view model locator pattern, a static bootstrapper etc.
+
+
             ViewModel = new MainViewModel();
-            
-            // Here we set the view locator we declared above. Usually this property is initialized 
-            // in XAML. But also, you could use Splat.Locator to register your views and view models e.g.
-            // https://www.reactiveui.net/docs/handbook/view-location/#using-reflection-to-register-views
+
             RoutedViewHost.ViewLocator = new RoutedLocator();
-            
+
             this.WhenActivated(disposables =>
             {
                 this.OneWayBind(ViewModel, x => x.Router, x => x.RoutedViewHost.Router)
                     .DisposeWith(disposables);
             });
 
+            {
+                NavView.SelectedItem = NavView.MenuItems.First();
+                ViewModel?.OpenHomePage.Execute(Unit.Default);
+            }
         }
         object? IViewFor.ViewModel
         {
@@ -55,7 +66,7 @@ namespace InwentarzRzeczowy.UWP.Views
             set => SetValue(ViewModelProperty, value);
         }
 
-        
+
         private void NavView_OnItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
             if (args.IsSettingsInvoked)
@@ -64,17 +75,20 @@ namespace InwentarzRzeczowy.UWP.Views
             }
             else
             {
-                var navTo = args.InvokedItemContainer.Tag.ToString();
-
-                if (navTo != null)
+                switch (args.InvokedItemContainer.Tag.ToString())
                 {
-                    switch (navTo)
-                    {
-                        case "Add":
-                            // We ensured that view model is never null now, so the null 
-                            // check here should beno longer required.
-                            ViewModel.AddPage.Execute(Unit.Default); break;
-                    }
+                    case "NewEntry":
+                        ViewModel?.OpenNewEntryPage.Execute(Unit.Default);
+                        break;
+                    case "NewCategory":
+                        ViewModel?.OpenNewCategoryPage.Execute(Unit.Default);
+                        break;
+                    case "Home":
+                        ViewModel?.OpenHomePage.Execute(Unit.Default);
+                        break;
+                    default:
+                        ViewModel?.OpenHomePage.Execute(Unit.Default);
+                        break;
                 }
             }
         }
