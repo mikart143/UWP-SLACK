@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\mikar\Downloads\packages.png</Source>
+    <SmallTileSource>C:\Users\mikar\Downloads\packages.png</SmallTileSource>
+    <MediumTileSource>C:\Users\mikar\Downloads\packages.png</MediumTileSource>
+    <WideTileSource>C:\Users\mikar\Downloads\packages.png</WideTileSource>
+    <LargeTileSource>C:\Users\mikar\Downloads\packages.png</LargeTileSource>
+    <AppIconSource>C:\Users\mikar\Downloads\packages.png</AppIconSource>
+    <SplashScreenSource>C:\Users\mikar\Downloads\packages.png</SplashScreenSource>
+    <BadgeLogoSource>C:\Users\mikar\Downloads\packages.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\mikar\Downloads\packages.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

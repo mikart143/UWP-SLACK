@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\mikar\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mikar\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_InwentarzRzeczowy.-1964380874.00" t="ExcludeRecursive" />
+    <e p="D:\Projects\InwentarzRzeczowy" t="IncludeFlat">
+      <e p="InwentarzRzeczowy.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src\InwentarzRzeczowy" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FodyWeavers.xml" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IHomeViewModel.cs" t="Include" />
+          <e p="IMainViewModel.cs" t="Include" />
+          <e p="INewCategoryViewModel.cs" t="Include" />
+          <e p="INewEntryViewModel.cs" t="Include" />
+        </e>
+        <e p="InwentarzRzeczowy.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="InwentarzRzeczowy.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ViewModels" t="Include">
+          <e p="HomeViewModel.cs" t="Include" />
+          <e p="MainViewModel.cs" t="Include" />
+          <e p="NewCategoryViewModel.cs" t="Include" />
+          <e p="NewEntryViewModel.cs" t="Include" />
+        </e>
+      </e>
+      <e p="src\InwentarzRzeczowy.Services.UWP" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="InwentarzRzeczowy.Services.UWP.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="InwentarzRzeczowy.Services.UWP.rd.xml" t="Include" />
+        </e>
+      </e>
+      <e p="src\InwentarzRzeczowy.UWP" t="IncludeRecursive">
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="Assets" t="Include">
+          <e p="BadgeLogo.scale-100.png" t="Include" />
+          <e p="BadgeLogo.scale-125.png" t="Include" />
+          <e p="BadgeLogo.scale-150.png" t="Include" />
+          <e p="BadgeLogo.scale-200.png" t="Include" />
+          <e p="BadgeLogo.scale-400.png" t="Include" />
+          <e p="LargeTile.scale-100.png" t="Include" />
+          <e p="LargeTile.scale-125.png" t="Include" />
+          <e p="LargeTile.scale-150.png" t="Include" />
+          <e p="LargeTile.scale-200.png" t="Include" />
+          <e p="LargeTile.scale-400.png" t="Include" />
+          <e p="Placeholder.png" t="Include" />
+          <e p="SmallTile.scale-100.png" t="Include" />
+          <e p="SmallTile.scale-125.png" t="Include" />
+          <e p="SmallTile.scale-150.png" t="Include" />
+          <e p="SmallTile.scale-200.png" t="Include" />
+          <e p="SmallTile.scale-400.png" t="Include" />
+          <e p="SplashScreen.scale-100.png" t="Include" />
+          <e p="SplashScreen.scale-125.png" t="Include" />
+          <e p="SplashScreen.scale-150.png" t="Include" />
+          <e p="SplashScreen.scale-200.png" t="Include" />
+          <e p="SplashScreen.scale-400.png" t="Include" />
+          <e p="Square150x150Logo.scale-100.png" t="Include" />
+          <e p="Square150x150Logo.scale-125.png" t="Include" />
+          <e p="Square150x150Logo.scale-150.png" t="Include" />
+          <e p="Square150x150Logo.scale-200.png" t="Include" />
+          <e p="Square150x150Logo.scale-400.png" t="Include" />
+          <e p="Square44x44Logo.altform-lightunplated_targetsize-16.png" t="Include" />
+          <e p="Square44x44Logo.altform-lightunplated_targetsize-24.png" t="Include" />
+          <e p="Square44x44Logo.altform-lightunplated_targetsize-256.png" t="Include" />
+          <e p="Square44x44Logo.altform-lightunplated_targetsize-32.png" t="Include" />
+          <e p="Square44x44Logo.altform-lightunplated_targetsize-48.png" t="Include" />
+          <e p="Square44x44Logo.altform-unplated_targetsize-16.png" t="Include" />
+          <e p="Square44x44Logo.altform-unplated_targetsize-24.png" t="Include" />
+          <e p="Square44x44Logo.altform-unplated_targetsize-256.png" t="Include" />
+          <e p="Square44x44Logo.altform-unplated_targetsize-32.png" t="Include" />
+          <e p="Square44x44Logo.altform-unplated_targetsize-48.png" t="Include" />
+          <e p="Square44x44Logo.scale-100.png" t="Include" />
+          <e p="Square44x44Logo.scale-125.png" t="Include" />
+          <e p="Square44x44Logo.scale-150.png" t="Include" />
+          <e p="Square44x44Logo.scale-200.png" t="Include" />
+          <e p="Square44x44Logo.scale-400.png" t="Include" />
+          <e p="Square44x44Logo.targetsize-16.png" t="Include" />
+          <e p="Square44x44Logo.targetsize-24.png" t="Include" />
+          <e p="Square44x44Logo.targetsize-256.png" t="Include" />
+          <e p="Square44x44Logo.targetsize-32.png" t="Include" />
+          <e p="Square44x44Logo.targetsize-48.png" t="Include" />
+          <e p="StoreLogo.scale-100.png" t="Include" />
+          <e p="StoreLogo.scale-125.png" t="Include" />
+          <e p="StoreLogo.scale-150.png" t="Include" />
+          <e p="StoreLogo.scale-200.png" t="Include" />
+          <e p="StoreLogo.scale-400.png" t="Include" />
+          <e p="Wide310x150Logo.scale-100.png" t="Include" />
+          <e p="Wide310x150Logo.scale-125.png" t="Include" />
+          <e p="Wide310x150Logo.scale-150.png" t="Include" />
+          <e p="Wide310x150Logo.scale-200.png" t="Include" />
+          <e p="Wide310x150Logo.scale-400.png" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="InwentarzRzeczowy.UWP.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="x86" t="Include">
+            <e p="Debug" t="Include">
+              <e p="App.g.cs" t="Include" />
+              <e p="App.g.i.cs" t="Include" />
+              <e p="Views" t="Include">
+                <e p="HomeView.g.cs" t="Include" />
+                <e p="HomeView.g.i.cs" t="Include" />
+                <e p="MainView.g.cs" t="Include" />
+                <e p="MainView.g.i.cs" t="Include" />
+                <e p="NewCategoryView.g.cs" t="Include" />
+                <e p="NewCategoryView.g.i.cs" t="Include" />
+                <e p="NewEntryView.g.cs" t="Include" />
+                <e p="NewEntryView.g.i.cs" t="Include" />
+              </e>
+              <e p="XamlTypeInfo.g.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Package.appxmanifest" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="Annotations.cs" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Default.rd.xml" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="HomeView.xaml" t="Include" />
+          <e p="HomeView.xaml.cs" t="Include" />
+          <e p="MainView.xaml" t="Include" />
+          <e p="MainView.xaml.cs" t="Include" />
+          <e p="NewCategoryView.xaml" t="Include" />
+          <e p="NewCategoryView.xaml.cs" t="Include" />
+          <e p="NewEntryView.xaml" t="Include" />
+          <e p="NewEntryView.xaml.cs" t="Include" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>
