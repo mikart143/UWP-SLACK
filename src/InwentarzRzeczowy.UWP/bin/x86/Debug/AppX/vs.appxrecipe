@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-06T08:31:30.546</Modified>
+      <Modified>2020-10-06T08:55:50.437</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\InwentarzRzeczowy.UWP.exe">
       <PackagePath>entrypoint\InwentarzRzeczowy.UWP.exe</PackagePath>
-      <Modified>2020-10-06T08:31:27.677</Modified>
+      <Modified>2020-10-06T08:55:47.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mikar\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -256,7 +256,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\bin\Debug\netstandard2.0\InwentarzRzeczowy.dll">
       <PackagePath>InwentarzRzeczowy.dll</PackagePath>
-      <Modified>2020-10-06T08:31:25.419</Modified>
+      <Modified>2020-10-06T08:55:36.332</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mikar\.nuget\packages\win2d.uwp\1.25.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -559,27 +559,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-06T08:29:10.491</Modified>
+      <Modified>2020-10-06T08:55:46.954</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\HomeView.xbf">
       <PackagePath>Views\HomeView.xbf</PackagePath>
-      <Modified>2020-10-06T08:29:10.491</Modified>
+      <Modified>2020-10-06T08:55:46.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\LoadingControl.xbf">
       <PackagePath>Views\LoadingControl.xbf</PackagePath>
-      <Modified>2020-10-06T08:29:10.491</Modified>
+      <Modified>2020-10-06T08:55:46.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\MainView.xbf">
       <PackagePath>Views\MainView.xbf</PackagePath>
-      <Modified>2020-10-06T08:29:10.491</Modified>
+      <Modified>2020-10-06T08:55:46.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\NewCategoryView.xbf">
       <PackagePath>Views\NewCategoryView.xbf</PackagePath>
-      <Modified>2020-10-06T08:29:10.491</Modified>
+      <Modified>2020-10-06T08:55:46.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\NewEntryView.xbf">
       <PackagePath>Views\NewEntryView.xbf</PackagePath>
-      <Modified>2020-10-06T08:29:10.492</Modified>
+      <Modified>2020-10-06T08:55:46.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -591,7 +591,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Core\InwentarzRzeczowy.UWP.exe">
       <PackagePath>InwentarzRzeczowy.UWP.exe</PackagePath>
-      <Modified>2020-10-06T08:31:30.524</Modified>
+      <Modified>2020-10-06T08:55:50.410</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

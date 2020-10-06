@@ -27,7 +27,7 @@ namespace InwentarzRzeczowy.ViewModels
         private SourceList<Image> _imageSourceList;
 
         public ReadOnlyObservableCollection<Image> _photos;
-        public ReadOnlyObservableCollection<Image> Photos { get; }
+        public ReadOnlyObservableCollection<Image> Photos => this._photos;
         public string UrlPathSegment { get; } = Guid.NewGuid().ToString().Substring(0, 5);
         public IScreen HostScreen { get; }
 
