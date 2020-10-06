@@ -7,12 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource SystemControlAcrylicElementBrush}">
     <Page.Transitions>
         <TransitionCollection>
             <AddDeleteThemeTransition />
         </TransitionCollection>
     </Page.Transitions>
+    <Page.Resources>
+        <DataTemplate x:Key="PhotoTemplate">
+            <Grid
+                Background="White"
+                BorderBrush="Black"
+                BorderThickness="1">
+                <Image
+                    Stretch="UniformToFill"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Source="{Binding Thumbnail}"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
     <Grid ColumnSpacing="4">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300"></ColumnDefinition>
@@ -23,22 +37,32 @@
             <TextBox Header="Nazwa urządzenia" Margin="5"/>
             <TextBox Header="Opis przedmiotu" Margin="5" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                      ScrollViewer.VerticalScrollBarVisibility="Auto" Height="110"/>
-            <Grid Margin="5" ColumnSpacing="4">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Content="Dodaj zdjęcie" HorizontalAlignment="Stretch"/>
-                <Button Grid.Column="1" Content="Usuń zdjęcie"  HorizontalAlignment="Stretch"/>
-            </Grid>
             <ComboBox Header="Wybór kategorii" HorizontalAlignment="Stretch" Margin="5"/>
             <ListView VerticalAlignment="Stretch"/>
         </StackPanel>
         <Grid Grid.Column="1">
-            <controls:ImageCropper x:Name="ImageCropper" CropShape="Rectangular" ThumbPlacement="All"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" x:Name="AddPhoto" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon Glyph="&#xE710;" Margin="0,0,5,0"/>
+                        <TextBlock Text="Dodaj zdjęcie"/>
+                    </StackPanel>
+                </Button>
+                <controls:AdaptiveGridView 
+                    x:Name="Photos"
+                    Grid.Row="1" 
+                    StretchContentForSingleRow="False"
+                    ItemHeight="328"
+                    DesiredWidth="500"
+                    SelectionMode="None"
+                    IsItemClickEnabled="True"
+                    ItemTemplate="{StaticResource PhotoTemplate}"/>
+            </Grid>
+            
         </Grid>
 
 

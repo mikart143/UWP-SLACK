@@ -6,7 +6,7 @@ using ReactiveUI.Fody.Helpers;
 
 namespace InwentarzRzeczowy.Interfaces
 {
-    public interface INewCategoryViewModel: INotifyPropertyChanged, IRoutableViewModel
+    public interface INewCategoryViewModel: IRoutableViewModel
     {
         [Reactive]
         public string Name { get; set; }
@@ -19,7 +19,8 @@ namespace InwentarzRzeczowy.Interfaces
 
         public ReactiveCommand<Unit, Unit> Create { get; }
 
-        [ObservableAsProperty]
-        public bool IsLoading { get; }
+        public  string Prefix { [ObservableAsProperty] get; }
+
+        public bool IsLoading { [ObservableAsProperty] get; }
     }
 }

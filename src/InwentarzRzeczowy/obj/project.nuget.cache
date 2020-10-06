@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+cRRu/Uc0sW1Oz99msePn7vMy5OSgz4se8AoidtFjHd2h9lerxnTU/1KG/M21JHE2PZ30+YLEZXykSnx1V6AWQ==",
+  "dgSpecHash": "v1U+TtkhPNW+tF8hY7nylQf1vV2oVzL0za5u8Lg2AwmlfCnEm8ifVyPgDvgn4MMJpOhJySw1XvpNSFsrOHZYcw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\InwentarzRzeczowy\\src\\InwentarzRzeczowy\\InwentarzRzeczowy.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,9 @@
     "C:\\Users\\mikar\\.nuget\\packages\\reactiveui\\11.5.35\\reactiveui.11.5.35.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\reactiveui.events\\11.5.35\\reactiveui.events.11.5.35.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\reactiveui.fody\\11.5.35\\reactiveui.fody.11.5.35.nupkg.sha512",
+    "C:\\Users\\mikar\\.nuget\\packages\\sixlabors.imagesharp\\1.0.1\\sixlabors.imagesharp.1.0.1.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\splat\\9.5.20\\splat.9.5.20.nupkg.sha512",
+    "C:\\Users\\mikar\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.diagnostics.contracts\\4.3.0\\system.diagnostics.contracts.4.3.0.nupkg.sha512",
@@ -22,6 +24,8 @@
     "C:\\Users\\mikar\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\mikar\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\mikar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.reactive\\4.4.1\\system.reactive.4.4.1.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",

@@ -893,6 +893,20 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "SixLabors.ImageSharp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "Splat/9.5.49": {
         "type": "package",
         "compile": {
@@ -927,6 +941,15 @@
         },
         "runtime": {
           "lib/uap10.0.16299/Splat.Microsoft.Extensions.Logging.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -1171,6 +1194,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -1638,7 +1670,8 @@
         "dependencies": {
           "ReactiveUI": "11.5.35",
           "ReactiveUI.Events": "11.5.35",
-          "ReactiveUI.Fody": "11.5.35"
+          "ReactiveUI.Fody": "11.5.35",
+          "SixLabors.ImageSharp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/InwentarzRzeczowy.dll": {}
@@ -2899,6 +2932,20 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "SixLabors.ImageSharp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "Splat/9.5.49": {
         "type": "package",
         "compile": {
@@ -2935,13 +2982,13 @@
           "lib/uap10.0.16299/Splat.Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/uap10.0.16299/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -3173,6 +3220,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -3657,7 +3713,8 @@
         "dependencies": {
           "ReactiveUI": "11.5.35",
           "ReactiveUI.Events": "11.5.35",
-          "ReactiveUI.Fody": "11.5.35"
+          "ReactiveUI.Fody": "11.5.35",
+          "SixLabors.ImageSharp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/InwentarzRzeczowy.dll": {}
@@ -4949,6 +5006,20 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "SixLabors.ImageSharp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "Splat/9.5.49": {
         "type": "package",
         "compile": {
@@ -4985,13 +5056,13 @@
           "lib/uap10.0.16299/Splat.Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/uap10.0.16299/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -5223,6 +5294,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -5707,7 +5787,8 @@
         "dependencies": {
           "ReactiveUI": "11.5.35",
           "ReactiveUI.Events": "11.5.35",
-          "ReactiveUI.Fody": "11.5.35"
+          "ReactiveUI.Fody": "11.5.35",
+          "SixLabors.ImageSharp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/InwentarzRzeczowy.dll": {}
@@ -6999,6 +7080,20 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "SixLabors.ImageSharp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "Splat/9.5.49": {
         "type": "package",
         "compile": {
@@ -7035,13 +7130,13 @@
           "lib/uap10.0.16299/Splat.Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/uap10.0.16299/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -7273,6 +7368,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -7757,7 +7861,8 @@
         "dependencies": {
           "ReactiveUI": "11.5.35",
           "ReactiveUI.Events": "11.5.35",
-          "ReactiveUI.Fody": "11.5.35"
+          "ReactiveUI.Fody": "11.5.35",
+          "SixLabors.ImageSharp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/InwentarzRzeczowy.dll": {}
@@ -9018,6 +9123,20 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "SixLabors.ImageSharp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "Splat/9.5.49": {
         "type": "package",
         "compile": {
@@ -9054,13 +9173,13 @@
           "lib/uap10.0.16299/Splat.Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/uap10.0.16299/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -9292,6 +9411,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -9776,7 +9904,8 @@
         "dependencies": {
           "ReactiveUI": "11.5.35",
           "ReactiveUI.Events": "11.5.35",
-          "ReactiveUI.Fody": "11.5.35"
+          "ReactiveUI.Fody": "11.5.35",
+          "SixLabors.ImageSharp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/InwentarzRzeczowy.dll": {}
@@ -11068,6 +11197,20 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "SixLabors.ImageSharp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "Splat/9.5.49": {
         "type": "package",
         "compile": {
@@ -11104,13 +11247,13 @@
           "lib/uap10.0.16299/Splat.Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/uap10.0.16299/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -11342,6 +11485,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -11826,7 +11978,8 @@
         "dependencies": {
           "ReactiveUI": "11.5.35",
           "ReactiveUI.Events": "11.5.35",
-          "ReactiveUI.Fody": "11.5.35"
+          "ReactiveUI.Fody": "11.5.35",
+          "SixLabors.ImageSharp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/InwentarzRzeczowy.dll": {}
@@ -13087,6 +13240,20 @@
           "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "SixLabors.ImageSharp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "Splat/9.5.49": {
         "type": "package",
         "compile": {
@@ -13123,13 +13290,13 @@
           "lib/uap10.0.16299/Splat.Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/uap10.0.16299/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -13361,6 +13528,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -13845,7 +14021,8 @@
         "dependencies": {
           "ReactiveUI": "11.5.35",
           "ReactiveUI.Events": "11.5.35",
-          "ReactiveUI.Fody": "11.5.35"
+          "ReactiveUI.Fody": "11.5.35",
+          "SixLabors.ImageSharp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/InwentarzRzeczowy.dll": {}
@@ -15137,6 +15314,20 @@
           "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
         }
       },
+      "SixLabors.ImageSharp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "Splat/9.5.49": {
         "type": "package",
         "compile": {
@@ -15173,13 +15364,13 @@
           "lib/uap10.0.16299/Splat.Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/uap10.0.16299/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -15411,6 +15602,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -15895,7 +16095,8 @@
         "dependencies": {
           "ReactiveUI": "11.5.35",
           "ReactiveUI.Events": "11.5.35",
-          "ReactiveUI.Fody": "11.5.35"
+          "ReactiveUI.Fody": "11.5.35",
+          "SixLabors.ImageSharp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/InwentarzRzeczowy.dll": {}
@@ -21885,6 +22086,30 @@
         "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll"
       ]
     },
+    "SixLabors.ImageSharp/1.0.1": {
+      "sha512": "DjLoFNdUfsDP7RhPpr5hcUhl1XiejqBML9uDWuOUwCkc0Y+sG9IJLLbqSOi9XeoWqPviwdcDm1F8nKdF0qTYIQ==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/SixLabors.ImageSharp.dll",
+        "lib/net472/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.xml",
+        "lib/netstandard1.3/SixLabors.ImageSharp.dll",
+        "lib/netstandard1.3/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.1/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.1/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.1.0.1.nupkg.sha512",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
     "Splat/9.5.49": {
       "sha512": "Z9B4ARfLiu6H0siCdB6mCLYQ9CsJomtLAdQuXbsNkEbVnDBz0qas0yC0wititwIw0fEGgKuTQQbJTgZ8bxGoNw==",
       "type": "package",
@@ -21937,19 +22162,35 @@
         "splat.microsoft.extensions.logging.nuspec"
       ]
     },
-    "System.Buffers/4.3.0": {
-      "sha512": "ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
-      "path": "system.buffers/4.3.0",
+      "path": "system.buffers/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.1/.xml",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
         "lib/netstandard1.1/System.Buffers.dll",
-        "system.buffers.4.3.0.nupkg.sha512",
-        "system.buffers.nuspec"
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Collections/4.3.0": {
@@ -22854,6 +23095,53 @@
         "ref/netcoreapp2.1/_._",
         "system.memory.4.5.4.nupkg.sha512",
         "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -24529,6 +24817,7 @@
       "ReactiveUI >= 11.5.35",
       "ReactiveUI.Events >= 11.5.35",
       "ReactiveUI.Fody >= 11.5.35",
+      "SixLabors.ImageSharp >= 1.0.1",
       "Splat >= 9.5.49",
       "Splat.Microsoft.Extensions.DependencyInjection >= 9.5.49",
       "Splat.Microsoft.Extensions.Logging >= 9.5.49"
@@ -24609,6 +24898,10 @@
           "ReactiveUI.Fody": {
             "target": "Package",
             "version": "[11.5.35, )"
+          },
+          "SixLabors.ImageSharp": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           },
           "Splat": {
             "target": "Package",

@@ -28,20 +28,16 @@ namespace InwentarzRzeczowy.UWP.Views
     public sealed partial class NewCategoryView : Page, IViewFor<INewCategoryViewModel>
     {
         public static readonly DependencyProperty ViewModelProperty = DependencyProperty
-            .Register(nameof(ViewModel), typeof(NewCategoryView), typeof(INewCategoryViewModel), null);
+            .Register(nameof(ViewModel), typeof(NewCategoryView), typeof(INewCategoryViewModel), new PropertyMetadata(null));
+
+        private LoadingControl _loadingControl;
         public NewCategoryView()
         {
             this.InitializeComponent();
+            _loadingControl = new LoadingControl();
 
             this.WhenActivated(disposables =>
             {
-                var canCreate = this.WhenAnyValue(
-                    x => x.CategoryName,
-                    x => x.CategoryDescription,
-                    x => x.CategoryAttributes,
-                    (name, description, attributes) => !string.IsNullOrEmpty(name.Text) &&
-                                                       !string.IsNullOrEmpty(description.Text) &&
-                                                       !string.IsNullOrEmpty(attributes.Text));
 
                 this.Bind(this.ViewModel,
                         viewModel => viewModel.Name,
@@ -57,9 +53,10 @@ namespace InwentarzRzeczowy.UWP.Views
                     .DisposeWith(disposables);
                 this.BindCommand(this.ViewModel,
                         viewModel => viewModel!.Create,
-                        view => view.CreateCategory.Command)
+                        view => view.CreateCategory)
                     .DisposeWith(disposables);
-                this.OneWayBind(ViewModel, x => x.IsLoading, y => y.ProgressRing.IsActive).DisposeWith(disposables);
+                this.Bind(ViewModel, vm => vm.Prefix, v => v.CategoryPrefix.Text).DisposeWith(disposables);
+                this.WhenAnyValue(x => x.ViewModel.IsLoading).Subscribe(_loadingControl.IsRunning);
 
             });
 
@@ -67,13 +64,13 @@ namespace InwentarzRzeczowy.UWP.Views
 
         }
 
-        object? IViewFor.ViewModel
+        object IViewFor.ViewModel
         {
             get => ViewModel;
-            set => ViewModel = (INewCategoryViewModel)value!;
+            set => ViewModel = (INewCategoryViewModel)value;
         }
 
-        public INewCategoryViewModel? ViewModel
+        public INewCategoryViewModel ViewModel
         {
             get => (INewCategoryViewModel)GetValue(ViewModelProperty);
             set => SetValue(ViewModelProperty, value);

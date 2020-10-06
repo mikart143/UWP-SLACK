@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ma8ySvGX2x+4XCeJaVa8QwHtIr0+xOW29Wz11N6NZlNnr7tvvB7Umti0R1BhFVL4idD/4we63fdIj7zuzZEHqw==",
+  "dgSpecHash": "3oFCQ9h9czo/9XEMjzvBOEFn0Ppw8/LXzCmGEyLeoobR0rNDik02FBlaLJImiT1k/f/kKuq+Y6MoGwR23J/T+A==",
   "success": true,
   "projectFilePath": "D:\\Projects\\InwentarzRzeczowy\\src\\InwentarzRzeczowy.Services.UWP\\InwentarzRzeczowy.Services.UWP.csproj",
   "expectedPackageFiles": [
@@ -33,7 +33,11 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\mikar\\.nuget\\packages\\sixlabors.imagesharp\\1.0.1\\sixlabors.imagesharp.1.0.1.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\splat\\9.5.20\\splat.9.5.20.nupkg.sha512",
+    "C:\\Users\\mikar\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\mikar\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\mikar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.reactive\\4.4.1\\system.reactive.4.4.1.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
     "C:\\Users\\mikar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"

@@ -3,7 +3,7 @@ using ReactiveUI;
 
 namespace InwentarzRzeczowy.Interfaces
 {
-    public interface IHomeViewModel:INotifyPropertyChanged, IRoutableViewModel
+    public interface IHomeViewModel: IRoutableViewModel
     {
         
     }

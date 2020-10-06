@@ -2,15 +2,13 @@
 using System.Linq;
 using System.Reactive;
 using System.Reactive.Disposables;
-using Windows.ApplicationModel.Core;
-using Windows.Foundation.Metadata;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Navigation;
+using Windows.UI.Xaml.Controls.Primitives;
 using InwentarzRzeczowy.Interfaces;
 using InwentarzRzeczowy.ViewModels;
 using ReactiveUI;
-using InwentarzRzeczowy.ViewModels;
+using Splat;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -38,6 +36,8 @@ namespace InwentarzRzeczowy.UWP.Views
         {
             this.InitializeComponent();
 
+            Window.Current.SetTitleBar(TitleBar);
+
 
             ViewModel = new MainViewModel();
 
@@ -47,12 +47,19 @@ namespace InwentarzRzeczowy.UWP.Views
             {
                 this.OneWayBind(ViewModel, x => x.Router, x => x.RoutedViewHost.Router)
                     .DisposeWith(disposables);
+                this.OneWayBind(ViewModel, x => x.CanGoBack, y => y.BackButton.IsEnabled)
+                    .DisposeWith(disposables);
+                this.BackButton.Events().Click.Subscribe(_ => NavView_OnBackRequested());
             });
 
             {
+                RoutedViewHost.DefaultContent = Locator.Current.GetService(typeof(IViewFor<IHomeViewModel>));
                 NavView.SelectedItem = NavView.MenuItems.First();
                 ViewModel?.OpenHomePage.Execute(Unit.Default);
             }
+
+
+            
         }
         object? IViewFor.ViewModel
         {
@@ -71,7 +78,7 @@ namespace InwentarzRzeczowy.UWP.Views
         {
             if (args.IsSettingsInvoked)
             {
-
+                
             }
             else
             {
@@ -91,6 +98,22 @@ namespace InwentarzRzeczowy.UWP.Views
                         break;
                 }
             }
+        }
+
+        private void NavView_OnBackRequested()
+        {
+            var last = ViewModel?.Router.NavigationStack[ViewModel.Router.NavigationStack.Count - 2];
+            NavView.SelectedItem = last switch
+            {
+                INewCategoryViewModel _ => NavView.MenuItems.Select(x => (NavigationViewItem) x)
+                    .Single(x => x.Tag?.ToString() == "NewCategory"),
+                IHomeViewModel _ => NavView.MenuItems.Select(x => (NavigationViewItem) x)
+                    .Single(x => x.Tag?.ToString() == "Home"),
+                INewEntryViewModel _ => NavView.MenuItems.Select(x => (NavigationViewItem) x)
+                    .Single(x => x.Tag?.ToString() == "NewEntry"),
+                _ => NavView.SelectedItem
+            };
+            ViewModel?.GoBack.Execute();
         }
     }
 }

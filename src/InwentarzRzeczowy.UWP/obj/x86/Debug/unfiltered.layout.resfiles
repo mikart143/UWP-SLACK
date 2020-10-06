@@ -58,6 +58,7 @@ Assets\Wide310x150Logo.scale-400.png
 App.xbf
 InwentarzRzeczowy.UWP.xr.xml
 Views\HomeView.xbf
+Views\LoadingControl.xbf
 Views\MainView.xbf
 Views\NewCategoryView.xbf
 Views\NewEntryView.xbf

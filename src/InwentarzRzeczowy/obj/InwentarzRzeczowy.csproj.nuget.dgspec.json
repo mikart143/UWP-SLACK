@@ -59,6 +59,10 @@
             "ReactiveUI.Fody": {
               "target": "Package",
               "version": "[11.5.35, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [

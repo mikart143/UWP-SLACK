@@ -6,33 +6,56 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:appmodel="using:Windows.ApplicationModel"
+    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
     xmlns:reactiveUi="using:ReactiveUI"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    extensions:TitleBarExtensions.ButtonBackgroundColor="Transparent"
+    Background="{ThemeResource SystemControlAcrylicElementBrush}">
     <Page.Transitions>
         <TransitionCollection>
             <AddDeleteThemeTransition />
         </TransitionCollection>
     </Page.Transitions>
+
     <Grid>
-        <NavigationView x:ConnectionId='2' x:Name="NavView"                                                                                            SelectedItem="NavView.Home">
+        <Grid.Resources>
+            <AcrylicBrush x:Key="NavigationViewDefaultPaneBackground" BackgroundSource="Backdrop" TintColor="{ThemeResource SystemAccentColor}" TintOpacity=".5"/>
+            <AcrylicBrush x:Key="NavigationViewExpandedPaneBackground" BackgroundSource="HostBackdrop" TintColor="{ThemeResource SystemAccentColor}" TintOpacity=".4"/>
+
+        </Grid.Resources>
+        <NavigationView x:ConnectionId='2' x:Name="NavView" 
+                                                                               
+                                                            
+                        SelectedItem="NavView.Home" 
+                        IsBackButtonVisible="Collapsed"
+                        Background="{ThemeResource SystemControlAcrylicElementBrush}">
             <NavigationView.MenuItems>
                 <NavigationViewItem IsSelected="True" Icon="Home" Tag="Home" Content="Home" />
                 <NavigationViewItem Icon="OpenFile" Tag="NewEntry" Content="Dodaj urządzenie" />
                 <NavigationViewItem Icon="Preview" Tag="NewCategory" Content="Dodaj kategorie" />
             </NavigationView.MenuItems>
-            <reactiveUi:RoutedViewHost x:ConnectionId='4' 
+            <reactiveUi:RoutedViewHost x:ConnectionId='5' 
                 x:Name="RoutedViewHost"
                 HorizontalContentAlignment="Stretch"
                 VerticalContentAlignment="Stretch" 
                 Margin="12"/>
         </NavigationView>
 
-        <Grid Background="Transparent" VerticalAlignment="Top" >
-
-            <TextBlock x:ConnectionId='3'                                                      Grid.Column="1" Style="{StaticResource CaptionTextBlockStyle}" Margin="8,8,0,0"/>
+        <Grid Height="32" VerticalAlignment="Top" Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="32"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:ConnectionId='4' x:Name="TitleBar" Background="Transparent" Grid.Column="1">
+                <TextBlock Text="Inwentarz Rzeczowy" Margin="10,8,0,0"></TextBlock>
+            </Grid>
         </Grid>
-
+        
+        <Button x:ConnectionId='3' Width="40"  x:Name="BackButton" Background="Transparent" VerticalAlignment="Top" BorderThickness="0" >
+            <Button.Content>
+                <FontIcon Glyph="&#xE72B;" FontSize="16" Margin="2,4,2,2"/>
+            </Button.Content>
+        </Button>
     </Grid>
 </Page>
 

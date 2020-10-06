@@ -157,6 +157,9 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mikar\.nuget\packages\sixlabors.imagesharp\1.0.1\lib\netstandard2.0\SixLabors.ImageSharp.dll">
+      <PackagePath>SixLabors.ImageSharp.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mikar\.nuget\packages\splat\9.5.49\lib\uap10.0.16299\Splat.dll">
       <PackagePath>Splat.dll</PackagePath>
     </AppxPackagedFile>
@@ -433,6 +436,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\HomeView.xbf">
       <PackagePath>Views\HomeView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\LoadingControl.xbf">
+      <PackagePath>Views\LoadingControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\MainView.xbf">
       <PackagePath>Views\MainView.xbf</PackagePath>

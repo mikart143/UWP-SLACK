@@ -9,6 +9,7 @@
     <PackageReference Include="ReactiveUI" Version="11.5.35" />
     <PackageReference Include="ReactiveUI.Events" Version="11.5.35" />
     <PackageReference Include="ReactiveUI.Fody" Version="11.5.35" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.1" />
   </ItemGroup>
 
 </Project>

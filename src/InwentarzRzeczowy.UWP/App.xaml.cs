@@ -24,7 +24,7 @@ namespace InwentarzRzeczowy.UWP
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
-    sealed partial class App : Application
+    sealed partial class App
     {
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
@@ -92,6 +92,12 @@ namespace InwentarzRzeczowy.UWP
             //see https://reactiveui.net/docs/handbook/routing to learn more about routing in RxUI
             services.AddTransient<IViewFor<INewEntryViewModel>, NewEntryView>();
             services.AddTransient<NewEntryViewModel>();
+
+            services.AddTransient<IViewFor<IHomeViewModel>, HomeView>();
+            services.AddTransient<HomeViewModel>();
+
+            services.AddTransient<IViewFor<INewCategoryViewModel>, NewCategoryView>();
+            services.AddTransient<NewCategoryViewModel>();
         }
 
         /// <summary>
@@ -103,7 +109,6 @@ namespace InwentarzRzeczowy.UWP
         {
 
             CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
-            // ApplicationView.GetForCurrentView().Title = "Inwentarz Rzeczowy";
 
             Frame rootFrame = Window.Current.Content as Frame;
 

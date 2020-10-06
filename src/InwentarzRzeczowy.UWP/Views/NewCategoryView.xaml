@@ -8,7 +8,7 @@
     xmlns:ex="using:Microsoft.Toolkit.Uwp.UI.Extensions"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource SystemControlAcrylicElementBrush}">
     <Page.Transitions>
         <TransitionCollection>
             <AddDeleteThemeTransition />
@@ -22,13 +22,17 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1" Orientation="Vertical">
             <TextBox Header="Nazwa kategorii"  x:Name="CategoryName" Margin="0,5,0,0" />
+            <TextBox Header="Prefix kategorii"  x:Name="CategoryPrefix" Margin="0,5,0,0" />
             <TextBox Header="Opis kategorii"  x:Name="CategoryDescription" TextWrapping="Wrap" Height="250"
                      Margin="0,5,0,0" />
             <TextBlock Text="Pola dla danej kategorii"  Margin="0,5,0,3" />
             <controls:TokenizingTextBox QueryIcon="{ex:SymbolIconSource Symbol=Accept}" x:Name="CategoryAttributes"
                                         TokenDelimiter="," />
+            <TextBlock Text="Pola tagi dla danej kategorii"  Margin="0,5,0,3" />
+            <controls:TokenizingTextBox QueryIcon="{ex:SymbolIconSource Symbol=Accept}" x:Name="CategoryTags"
+                                        TokenDelimiter="," />
             <Button Content="Dodaj kategorię" x:Name="CreateCategory" HorizontalAlignment="Center" Margin="0,5,0,0" />
-            <ProgressRing x:Name="ProgressRing" IsActive="True"/>
+
         </StackPanel>
 
     </Grid>

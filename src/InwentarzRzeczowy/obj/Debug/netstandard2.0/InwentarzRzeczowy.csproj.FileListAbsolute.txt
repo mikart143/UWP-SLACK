@@ -4,7 +4,7 @@ D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\bin\Debug\netstandard2.0\Inw
 D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.csprojAssemblyReference.cache
 D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.AssemblyInfoInputs.cache
 D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.AssemblyInfo.cs
-D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.csproj.CoreCompileInputs.cache
-D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.csproj.Fody.CopyLocal.cache
 D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.dll
 D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.pdb
+D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.csproj.CoreCompileInputs.cache
+D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy\obj\Debug\netstandard2.0\InwentarzRzeczowy.csproj.Fody.CopyLocal.cache

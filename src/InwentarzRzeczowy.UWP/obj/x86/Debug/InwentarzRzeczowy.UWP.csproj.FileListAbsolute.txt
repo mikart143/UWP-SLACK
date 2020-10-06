@@ -159,3 +159,9 @@ D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\obj\x86\Debug\Views\Home
 D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\obj\x86\Debug\Views\HomeView.g.cs
 D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\obj\x86\Debug\Views\HomeView.xaml
 D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\obj\x86\Debug\Views\HomeView.xbf
+D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\Views\LoadingControl.xbf
+D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\obj\x86\Debug\Views\LoadingControl.g.i.cs
+D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\obj\x86\Debug\Views\LoadingControl.g.cs
+D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\obj\x86\Debug\Views\LoadingControl.xaml
+D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\obj\x86\Debug\Views\LoadingControl.xbf
+D:\Projects\InwentarzRzeczowy\src\InwentarzRzeczowy.UWP\bin\x86\Debug\SixLabors.ImageSharp.dll
